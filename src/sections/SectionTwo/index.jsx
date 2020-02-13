@@ -56,9 +56,9 @@ const SectionTwo = (props) => {
                           return (
                             <tr>
                               <td>{bet.time}</td>
-                              <td>{bet.bet}</td>
-                              <td>x{bet.payout}</td>
-                              <td>{bet.profit}</td>
+                              <td>{bet.bet / 1000}</td>
+                              <td>x{bet.payout / 4}</td>
+                              <td>{bet.profit / 1000}</td>
                             </tr>
                           );
                         })
