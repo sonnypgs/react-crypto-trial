@@ -9,6 +9,10 @@
   border-bottom-left-radius: 10px;
   padding: .1rem .5rem;
   padding-bottom: .7rem;
+  transition: all .25s ease-in;
+  &:hover {
+    background: lighten(#0a1a33, 5%);
+  }
 }
 
 .betAmountLabel {
@@ -23,7 +27,9 @@
     color: #fff;
     font-weight: bold;
     border: 0;
-    margin-left: .3rem;
+    margin-left: .2rem;
+    padding: .2rem;
+    width: 130px;
   }
 }
 
@@ -34,6 +40,12 @@
   align-items: center;
   width: 60px;
   margin-right: 2px;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  font-size: 12px;
+  &:hover {
+    background: darken(#275e99, 10%);
+  }
 }
 
 .multiplierDouble {
@@ -44,4 +56,10 @@
   width: 60px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  font-size: 12px;
+  &:hover {
+    background: darken(#275e99, 10%);
+  }
 }

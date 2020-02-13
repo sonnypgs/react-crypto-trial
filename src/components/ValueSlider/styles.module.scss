@@ -33,12 +33,20 @@
   background: #6ff48d;
   height: 150px;
   width: 80px;
+  transition: all .25s ease-in;
+  &:hover {
+    background: darken(#6ff48d, 10%);
+  }
 }
 
 .bottomBar {
   background: #fa6868;
   height: 270px;
   width: 80px;
+  transition: all .25s ease-in;
+  &:hover {
+    background: darken(#fa6868, 5%);
+  }
 }
 
 .sliderHandle {
