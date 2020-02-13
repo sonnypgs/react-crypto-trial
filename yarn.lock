@@ -849,7 +849,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@7.8.4", "@babel/runtime@^7.0.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.3":
+"@babel/runtime@7.8.4", "@babel/runtime@^7.0.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6":
   version "7.8.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.4.tgz#d79f5a2040f7caa24d53e563aad49cbc05581308"
   integrity sha512-neAp3zt80trRVBI1x0azq6c57aNBqYZH8KhMm3TaB7wEI5Q4A2SHfBHE8w9gOhI/lrqxtEbXZgQIrHP+wvSGwQ==
@@ -1207,13 +1207,6 @@
     "@svgr/plugin-jsx" "^4.3.3"
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
-
-"@tanem/svg-injector@^8.0.39":
-  version "8.0.39"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-8.0.39.tgz#4f7aa13c2cd8a6827d7931180b01a35862acb792"
-  integrity sha512-q1vZwp8lOYht9njFZASpV2dr8XLXCun0OUQgS7/NcB2zzVn4qIyW/33H8XXKw08WZ0cuKYzO7F9jitC7NK0VrQ==
-  dependencies:
-    "@babel/runtime" "^7.7.7"
 
 "@testing-library/dom@^6.11.0":
   version "6.12.2"
@@ -8660,15 +8653,6 @@ react-scripts@3.3.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
-
-react-svg@^11.0.9:
-  version "11.0.9"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-11.0.9.tgz#0387c95bce583922ae84035ad7596bcafaffbb91"
-  integrity sha512-MHgMF6JDz7FBUXry3ynyQTxxMnd5HISlVWSXP6qpcNtXZ5Z4Zp9n/0wS2WPnKp8zLguy+C7LK1R/n2b27tj5uQ==
-  dependencies:
-    "@babel/runtime" "^7.8.3"
-    "@tanem/svg-injector" "^8.0.39"
-    prop-types "^15.7.2"
 
 react@^16.12.0:
   version "16.12.0"
