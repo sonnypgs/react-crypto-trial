@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.values {
+  // background: yellow;;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 25px;
+}
+
+.minValue {
+  align-self: flex-end;
+  font-weight: 400;
+  margin: 0;
+}
+
+.maxValue {
+  flex: 1;
+  align-self: flex-end;
+  font-weight: 400;
+  margin: 0;
+}
+
+.bar {
+  position: relative;
+}
+
+.topBar {
+  background: #6ff48d;
+  height: 150px;
+  width: 80px;
+}
+
+.bottomBar {
+  background: #fa6868;
+  height: 270px;
+  width: 80px;
+}
+
+.sliderHandle {
+  position: absolute;
+  bottom: 244px;
+  right: -22px;
+  background: #2a434f;
+  font-size: 25px;
+  font-weight: 300;
+  padding: .7rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 0;
+}
+
+.sliderHandleTriangle {
+  position: absolute;
+  top: -0px;
+  left: -25px;
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #2a434f;
+}

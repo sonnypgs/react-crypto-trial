@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.betAmountBox {
+  background: #0a1a33;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: .1rem .5rem;
+  padding-bottom: .7rem;
+}
+
+.betAmountLabel {
+  color: #6380a6;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.betAmountInputBox {
+  input {
+    background: #0a1a33;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    margin-left: .3rem;
+  }
+}
+
+.multiplierHalf {
+  background: #275e99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  margin-right: 2px;
+}
+
+.multiplierDouble {
+  background: #275e99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
