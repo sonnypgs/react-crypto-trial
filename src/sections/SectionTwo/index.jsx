@@ -34,7 +34,10 @@ const SectionTwo = (props) => {
               console.log(data.betAdded);
               const newBet = data.betAdded;
               if (newBet) {
-                bets.push(data.betAdded);
+                if (bets.length >= 10) {
+                  bets.pop();
+                }
+                bets.unshift(data.betAdded);
                 setBets(bets);
               }
 
