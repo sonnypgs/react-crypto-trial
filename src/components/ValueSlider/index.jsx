@@ -28,7 +28,7 @@ const ValueSlider = () => {
           }}
         >
           <div className={styles.sliderHandle}>
-            <span>{sliderValue.toFixed(2)}</span>
+            <span>{Math.max(sliderValue, 0).toFixed(2)}</span>
             <div className={styles.sliderHandleTriangle} />
           </div>
         </Draggable>
