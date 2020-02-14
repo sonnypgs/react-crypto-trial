@@ -7,79 +7,7 @@ import {
   ProfitTable,
 } from '../../components';
 
-const betsNew = [
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: 195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: 195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: -195,
-  },
-  {
-    id: "23803",
-    time: 1581664571337,
-    bet: 441,
-    payout: 1,
-    profit: 195,
-  },
-];
+const MAX_BET_COUNT_DISPLAYED = 10;
 
 const SectionTwo = (props) => {
   const [bets, setBets] = useState([]);
@@ -109,8 +37,9 @@ const SectionTwo = (props) => {
               const newBet = data.betAdded;
               console.log(newBet);
               if (newBet) {
-                if (bets.length >= 10) {
+                if (bets.length >= MAX_BET_COUNT_DISPLAYED) {
                   bets.pop();
+                  setBets(bets);
                 }
                 bets.unshift(data.betAdded);
                 setBets(bets);
@@ -126,12 +55,6 @@ const SectionTwo = (props) => {
             }
           }
         </Subscription>
-
-                {/* <div className={styles.container}>
-                  <ProfitTable
-                    bets={betsNew}
-                  />
-                </div> */}
       </Section>
     </div>
   );

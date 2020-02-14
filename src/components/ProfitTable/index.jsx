@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import styles from './styles.module.scss';
 import { BitcoinIcon } from '../../components';
 
@@ -20,8 +21,13 @@ const ProfitTable = (props) => {
             <th className={styles.profitHeader}>Profit</th>
           </tr>
         </thead>
-        <tbody>
 
+        <ReactCSSTransitionGroup
+          component="tbody"
+          transitionName="betRow"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
+        >
           {
             bets.map((bet) => {
               const profit = (bet.profit / 1000).toFixed(8);
@@ -45,8 +51,7 @@ const ProfitTable = (props) => {
               );
             })
           }
-
-        </tbody>
+        </ReactCSSTransitionGroup>
       </table>
     </div>
   );

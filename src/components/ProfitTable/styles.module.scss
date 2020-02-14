@@ -28,7 +28,7 @@ table thead tr {
 
 table thead tr th {
   text-align: left;
-  padding: 1rem 1.5rem;
+  padding: 1rem .8rem;
   font-weight: 400;
   font-size: .7rem;
 
@@ -62,6 +62,10 @@ table tbody {
 }
 
 table tbody tr {
+  opacity: 1;
+  transition: opacity .5s ease-in, color 2s ease-in;
+  color: #fff;
+
   &:first-child {
     td {
       padding-top: 1.5rem;
@@ -85,7 +89,7 @@ table tbody tr {
 
 table tbody tr td {
   margin: 0;
-  padding: .8rem 1.5rem;
+  padding: 1rem .8rem;
   text-align: left;
   overflow: hidden;
   // display: inline-block;
@@ -142,5 +146,16 @@ table tbody tr td {
   align-items: center;
   span {
     margin-left: .3rem;
+  }
+}
+
+:global {
+  .betRow-enter {
+    opacity: 0.01;
+    color: yellow;
+  }
+  .betRow-leave {
+    opacity: 0;
+    transition: opacity .5s ease-out;
   }
 }
