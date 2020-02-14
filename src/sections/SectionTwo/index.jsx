@@ -1,10 +1,85 @@
 import React, { useState } from 'react';
-// import styles from './styles.module.scss';
+import styles from './styles.module.scss';
 import { Subscription } from 'react-apollo';
 import gql from 'graphql-tag';
 import {
   Section,
+  ProfitTable,
 } from '../../components';
+
+const betsNew = [
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: 195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: 195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: -195,
+  },
+  {
+    id: "23803",
+    time: 1581664571337,
+    bet: 441,
+    payout: 1,
+    profit: 195,
+  },
+];
 
 const SectionTwo = (props) => {
   const [bets, setBets] = useState([]);
@@ -18,7 +93,6 @@ const SectionTwo = (props) => {
               betAdded {
                 id
                 time
-                name
                 bet
                 payout
                 profit
@@ -33,6 +107,7 @@ const SectionTwo = (props) => {
 
               console.log(data.betAdded);
               const newBet = data.betAdded;
+              console.log(newBet);
               if (newBet) {
                 if (bets.length >= 10) {
                   bets.pop();
@@ -42,39 +117,21 @@ const SectionTwo = (props) => {
               }
 
               return (
-                <div>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Time</th>
-                        <th>Bet</th>
-                        <th>Multiplier</th>
-                        <th>Profit</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                      {
-                        bets.map((bet) => {
-                          return (
-                            <tr>
-                              <td>{bet.time}</td>
-                              <td>{bet.bet / 1000}</td>
-                              <td>x{bet.payout / 4}</td>
-                              <td>{bet.profit / 1000}</td>
-                            </tr>
-                          );
-                        })
-                      }
-
-                    </tbody>
-                  </table>
-                  {/* {JSON.stringify(data)} */}
+                <div className={styles.container}>
+                  <ProfitTable
+                    bets={bets}
+                  />
                 </div>
               );
             }
           }
         </Subscription>
+
+                {/* <div className={styles.container}>
+                  <ProfitTable
+                    bets={betsNew}
+                  />
+                </div> */}
       </Section>
     </div>
   );

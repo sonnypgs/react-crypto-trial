@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 const BitcoinIcon = () => {
   return (
     <span className={styles.container}>
-      <Icon icon={bitcoin} size={10} style={{ marginTop: -3}} />
+      <Icon icon={bitcoin} size={9} style={{ marginTop: -0}} />
     </span>
   );
 };

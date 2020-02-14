@@ -8,4 +8,11 @@
   height: 16px;
   width: 16px;
   color: #0a1a33;
+
+  i {
+    height: 16px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 }

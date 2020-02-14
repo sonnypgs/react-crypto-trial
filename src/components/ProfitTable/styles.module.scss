@@ -1,3 +1,146 @@
-// .container {
+@import '../../styles/variables.scss';
 
+.container {
+  width: 100%;
+}
+
+table {
+  max-width: 100%;
+  min-width: 100%;
+  background: #133253;
+  // padding-bottom: 1.5rem;
+  // border-top-left-radius: 10px;
+  // border-top-right-radius: 10px;
+  border-radius: .5rem;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: #275789;
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #7D9CC6;
+}
+
+table thead tr {
+  border-radius: 1rem;
+}
+
+table thead tr th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+  font-size: .7rem;
+
+  &:nth-child(1) {
+    border-top-left-radius: .5rem;
+  }
+
+  &:nth-last-child(1) {
+    border-top-right-radius: .5rem;
+  }
+}
+
+table tbody {
+  // display: block;
+  background: #133253;
+  font-size: .7rem;
+  border-radius: .5rem;
+  // padding-bottom: 1rem;
+  &:before, &:after {
+    // content: '';
+    // display: block;
+    // height: 20px;
+    // width: 100%;
+  }
+
+  &:after {
+    border-bottom-left-radius: .5rem;
+    border-radius: 5rem;
+    // position: absolute;
+  }
+}
+
+table tbody tr {
+  &:first-child {
+    td {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &:last-child {
+    td {
+      padding-bottom: 1.5rem;
+
+      &:nth-child(1) {
+        border-bottom-left-radius: .5rem;
+      }
+    
+      &:nth-last-child(1) {
+        border-bottom-right-radius: .5rem;
+      }
+    }
+  }
+}
+
+table tbody tr td {
+  margin: 0;
+  padding: .8rem 1.5rem;
+  text-align: left;
+  overflow: hidden;
+  // display: inline-block;
+  white-space: nowrap;
+}
+
+// .timeHeader {
 // }
+
+.betHeader {
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.multiplierHeader {
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+// .profitHeader {
+// }
+
+.timeCell {
+  // font-weight: bold;
+  min-width: 120px;
+}
+
+.betCell {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-left: .3rem;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.multiplierCell {
+  font-weight: bold;
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.profitCell {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  span {
+    margin-left: .3rem;
+  }
+}
