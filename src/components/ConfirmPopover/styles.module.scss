@@ -1,0 +1,64 @@
+.container {
+  background: #000000cc;
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.popover {
+  background: #2d4560;
+  width: 530px;
+}
+
+.popoverHeader {
+  display: flex;
+  background: #103352;
+  color: #fff;
+  padding: .7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.popoverHeaderConfirm {
+  display: flex;
+  flex: 1;
+  // align-content: center;
+  // justify-content: center;
+}
+
+.popoverHeaderConfirmIcon {
+  margin-right: .5rem;
+}
+
+.popoverHeaderConfirmText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popoverHeaderClose {
+  // align-self: 'flex-end';
+  // justify-self: 'flex-end';
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.popoverBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  color: #fff;
+}

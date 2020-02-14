@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
-import BitcoinIcon from '../BitcoinIcon';
+import { BitcoinIcon } from '../../components';
 
 const BetAmountInput = () => {
   const [amount, setAmount] = useState('0.04885313');

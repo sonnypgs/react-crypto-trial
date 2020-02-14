@@ -11,9 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   &:hover {
     .clamTopContainer {
-      // margin-top: -100px;
+      top: 55px;
     }
   }
 }
@@ -25,9 +26,6 @@
   top: 70px;
   // left: 0;
   transition: all .25s ease-in-out;
-  &:hover {
-    top: 55px;
-  }
 }
 
 .clamBottomContainer {

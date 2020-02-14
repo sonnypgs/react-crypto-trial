@@ -7,11 +7,19 @@ import {
 } from '../../components';
 
 const SectionThree = (props) => {
+  const {
+    className,
+    openConfirmPopover,
+  } = props;
+
   return (
-    <div className={`${props.className}`}>
+    <div className={`${className}`}>
       <Section>
 
-        <div className={styles.clamContainer}>
+        <div
+          className={styles.clamContainer}
+          onClick={openConfirmPopover}
+        >
           <div className={styles.clamTopContainer}>
             <ClamTopSVG />
           </div>
