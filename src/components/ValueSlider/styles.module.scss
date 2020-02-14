@@ -32,6 +32,7 @@
 .topBar {
   background: #6ff48d;
   height: 150px;
+  max-height: 300px;
   width: 80px;
   transition: all .25s ease-in;
   &:hover {
@@ -41,7 +42,8 @@
 
 .bottomBar {
   background: #fa6868;
-  height: 270px;
+  height: 150px;
+  max-height: 300px;
   width: 80px;
   transition: all .25s ease-in;
   &:hover {
