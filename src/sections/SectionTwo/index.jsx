@@ -33,9 +33,7 @@ const SectionTwo = (props) => {
               if (loading) return 'Loading...';
               if (error) return 'Error!';
 
-              console.log(data.betAdded);
               const newBet = data.betAdded;
-              console.log(newBet);
               if (newBet) {
                 if (bets.length >= MAX_BET_COUNT_DISPLAYED) {
                   bets.pop();

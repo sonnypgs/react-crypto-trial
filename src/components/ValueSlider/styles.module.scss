@@ -51,15 +51,18 @@
 
 .sliderHandle {
   position: absolute;
-  bottom: 244px;
+  // position: relative;
+  // bottom: 244px;
   right: -22px;
   background: #2a434f;
   font-size: 25px;
+  width: 77px;
   font-weight: 300;
   padding: .7rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-left: 0;
+  cursor: pointer;
 }
 
 .sliderHandleTriangle {
