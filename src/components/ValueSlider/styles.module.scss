@@ -34,7 +34,7 @@
   height: 150px;
   max-height: 300px;
   width: 80px;
-  transition: all .25s ease-in;
+  transition: background .25s ease-in;
   &:hover {
     background: darken(#6ff48d, 10%);
   }
@@ -45,7 +45,7 @@
   height: 150px;
   max-height: 300px;
   width: 80px;
-  transition: all .25s ease-in;
+  transition: background .25s ease-in;
   &:hover {
     background: darken(#fa6868, 5%);
   }
