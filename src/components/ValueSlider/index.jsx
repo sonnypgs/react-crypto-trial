@@ -21,10 +21,13 @@ const ValueSlider = () => {
         <Draggable
           axis="y"
           defaultPosition={{x: 0, y: (-sliderValue*3 - 25)}}
+          // grid={[.1,.1]}
           bounds={{top: (-100*3 - 25), left: 0, right: 0, bottom: -25}}
           onDrag={(e, ui) => {
-            const newValue = (sliderValue - ui.deltaY/3);
-            setSliderValue(newValue);
+            const newValue = (ui.y+25) / -3;
+            if (newValue >= 0 && newValue <= 100) {
+              setSliderValue(newValue);
+            }
           }}
         >
           <div className={styles.sliderHandle}>
